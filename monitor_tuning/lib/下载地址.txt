@@ -1,0 +1,31 @@
+https://dl.bintray.com/btraceio/maven/com/sun/tools/btrace/btrace-client/1.3.11/
+
+btrace的maven依赖的新版本，没有在maven的中央仓库维护，但是其官方维护了一份，使用方式为：
+
+在pom.xml中，引入btrace的maven仓库
+
+<!C
+	<repository>
+		<id>btrace</id>
+		<name>btrace maven</name>
+		<url>https://dl.bintray.com/btraceio/maven/</url>
+	</repository>
+然后引入依赖即可
+
+<!C
+	<dependency>
+		<groupId>com.sun.tools.btrace</groupId>
+		<artifactId>btrace-agent</artifactId>
+		<version>1.3.11.2</version>
+	</dependency>
+	<dependency>
+		<groupId>com.sun.tools.btrace</groupId>
+		<artifactId>btrace-boot</artifactId>
+		<version>1.3.11.2</version>
+	</dependency>
+	<dependency>
+		<groupId>com.sun.tools.btrace</groupId>
+		<artifactId>btrace-client</artifactId>
+		<version>1.3.11.2</version>
+	</dependency>
+    
